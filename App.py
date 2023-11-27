@@ -1,7 +1,7 @@
 from DataBase.ConeccionDB import Conexion
 from Model.Usuarios import Usuarios
 import os
-
+    # --- PRIMER MENU ----
 while True:
     print('\nIndica tu Rol')
     print('[1]SuperAdministrador\n[2]Administrador\n[3]Usuario\n'
@@ -19,7 +19,7 @@ while True:
         else:
             if dao.Autenticacion(nombre,contra):
                 input(f'Usuario {nombre} Auntenticado y Autorizado correctamente\nEnter para salir')
-                while True:
+                while True: # --- SEGUNDO MENU ---
                     print("-- Bienvenido al Sistema de Administracion de Usuarios --\n")
                     print("1 - Registrar Usuario\n2 - Eliminar Usuario\n3 - Bloquear Usuario\n"
                         "4 - Desbloquear Usuario\n5 - Cambiar contraseña a un usuario\n"
