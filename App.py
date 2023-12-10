@@ -7,7 +7,7 @@ while True:
     print('[1]SuperAdministrador\n[2]Administrador\n[3]Usuario\n'
         '[4]Vendedor')
     eleccion = input('>>>>>  ')
-    if eleccion != '3' and eleccion != '4':
+    if eleccion != '3' and eleccion != '4': # -- Error de seguridad correjido --
         dao = Conexion()
         os.system('cls')
         print('\n-- AUTENTICACION --\n ')
